@@ -1,0 +1,16 @@
+*:required {
+    border: 2px solid red;
+}
+
+input:disabled {
+    color: gray;
+    border: 2px solid gray;
+}
+
+input:enabled {
+    background-color: rgb(133, 133, 202);
+}
+
+* {
+    margin: 10px;
+}
