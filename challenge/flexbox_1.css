@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    width: 900px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 400px;
+}
+
+div {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-skyblue {
+    background-color: skyblue;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.background-pink {
+    background-color: pink;
+}
+
+.background-red {
+    background-color: red;
+}
+.background-lightgreen {
+    background-color: lightgreen;
+}
