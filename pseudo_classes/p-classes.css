@@ -1,4 +1,4 @@
-*:required {
+input:required {
     border: 2px solid red;
 }
 
