@@ -1,0 +1,51 @@
+@use "./mixins";
+
+@media screen and (max-width: 600px) {
+    @include mixins.horizFlag;
+    
+    .left {
+        background-color: black;
+    }
+
+    .middle {
+        background-color: red;
+    }
+
+    .right {
+        background-color: yellow;
+    }
+}           
+
+@media screen and (min-width:601px) and (max-width: 900px) {
+    @include mixins.vertFlag;
+    
+    .left {
+        background-color: black;
+    }
+
+    .middle {
+        background-color: yellow;
+    }
+
+    .right {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    @include mixins.vertFlag;
+
+    .left {
+        background-color: green;
+    }
+
+    .middle {
+        background-color: white;
+    }
+
+    .right {
+        background-color: orange;
+    }
+}
+
+

@@ -1,0 +1,61 @@
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+  }
+  body div {
+    width: 90%;
+    height: 33%;
+  }
+  .left {
+    background-color: black;
+  }
+  .middle {
+    background-color: red;
+  }
+  .right {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body div {
+    width: 90%;
+    padding-top: 60%;
+  }
+  .left {
+    background-color: black;
+  }
+  .middle {
+    background-color: yellow;
+  }
+  .right {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 901px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body div {
+    width: 90%;
+    padding-top: 60%;
+  }
+  .left {
+    background-color: green;
+  }
+  .middle {
+    background-color: white;
+  }
+  .right {
+    background-color: orange;
+  }
+}
