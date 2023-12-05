@@ -1,0 +1,5 @@
+@use "./stylevars.scss";
+
+h1 {
+    color: stylevars.$fred1;
+}

@@ -1,0 +1,26 @@
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  border: 2px dotted red;
+  padding: 10px;
+}
+
+.chip {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+.pill {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  border: 2px dashed blue;
+  padding: 10px;
+}

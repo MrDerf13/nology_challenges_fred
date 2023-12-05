@@ -1,0 +1,16 @@
+@use "./partials/mixins";
+
+.button {
+    @include mixins.arial-bold-centered;
+    @include mixins.border(dotted,red);
+}
+
+.chip {
+    @include mixins.arial-bold-centered;
+    @include mixins.border(solid,blue);
+}
+
+.pill {
+    @include mixins.arial-bold-centered;
+    @include mixins.border(dashed,blue);
+}

@@ -1,0 +1,24 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    padding: 6px 12px;
+    font-size: 18px;
+}
+
+.btn-secondary {
+    @extend .btn;
+    background-color: rgb(119, 216, 216);
+    border-color: rgb(119, 216, 216);
+}
+
+.card {
+    @extend %flex-center;
+    border: 1px solid black
+}

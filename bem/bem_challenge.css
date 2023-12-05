@@ -1,0 +1,24 @@
+.topsec__border--dash {
+    border: 3px dashed green;
+}
+
+.botsec__border--solid {
+    border: 2px solid coral;
+}
+
+.main__text--arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.para__desc--bluestr {
+    text-decoration: line-through;
+    color: blue;
+}
+
+.header__title--center {
+    text-align: center;
+}
+
+.para__desc--ralign {
+    text-align: right;
+}
