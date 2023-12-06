@@ -22,7 +22,7 @@
  */
 
 export const createRecipeString = (ingredientsArr) => {
-  return;
+  return ingredientsArr.join("+");
 };
 
 /**
@@ -33,7 +33,8 @@ export const createRecipeString = (ingredientsArr) => {
  */
 
 export const getFirstAndLastItems = (itemsArr) => {
-  return;
+  itemsArr = [itemsArr[0], itemsArr[itemsArr.length -1]]
+  return itemsArr;
 };
 
 /**
@@ -44,7 +45,12 @@ export const getFirstAndLastItems = (itemsArr) => {
  */
 
 export const totalScores = (scoreArr) => {
-  return;
+  let total = 0;
+  for (let i=0; i<=scoreArr.length -1; ++i){
+    total += scoreArr[i];
+  }
+  
+  return total;
 };
 
 /**
@@ -60,7 +66,11 @@ export const totalScores = (scoreArr) => {
  */
 
 export const totalRange = (rangeMax) => {
-  return;
+  let total=0;
+  for (let i=0; i<=rangeMax; ++i){
+    total+=i;
+  }
+  return total;
 };
 
 /**
@@ -71,7 +81,13 @@ export const totalRange = (rangeMax) => {
  */
 
 export const moveFirstAndLastItems = (itemsArr) => {
-  return;
+  let newArray = []
+  newArray.push(itemsArr[itemsArr.length -1]);
+  for (let i=0; i < itemsArr.length -1; ++i) {
+    newArray.push(itemsArr[i])
+  }
+
+  return newArray;
 };
 
 /**
@@ -89,7 +105,15 @@ export const moveFirstAndLastItems = (itemsArr) => {
  */
 
 export const removeEvenNumbers = (numberArr) => {
-  return;
+  // let newArray = []
+  // for (let i=0; i<numberArr.length; i++) {
+  //   if ((numberArr[i])%2==1){
+  //     newArray.push(numberArr[i])
+  //   }
+  // }
+  let newArray = [...numberArr];
+  const filteredArray = newArray.filter((number)=> number % 2 != 0);
+  return filteredArray;
 };
 
 /**
@@ -105,7 +129,15 @@ export const removeEvenNumbers = (numberArr) => {
  */
 
 export const generateAverage = (numberArr) => {
-  return;
+  let total = 0;
+  let arrLen = numberArr.length;
+  let arrAverage = 0;
+  if (arrLen != 0){
+    for (let i=0; i < arrLen; ++i){
+      total += numberArr[i];
+    } arrAverage = Math.round(total/arrLen);
+  }
+  return arrAverage;
 };
 
 /**
@@ -116,7 +148,11 @@ export const generateAverage = (numberArr) => {
  */
 
 export const reverseOrder = (toReverseArr) => {
-  return;
+  let newArray = [];
+  for (let i=toReverseArr.length-1; i >=0 ; --i){
+    newArray.push(toReverseArr[i])
+  }
+  return newArray;
 };
 
 /**
@@ -138,7 +174,17 @@ export const reverseOrder = (toReverseArr) => {
  */
 
 export const generateHighscores = (playersArr, scoresArr) => {
-  return;
+  let playScoreArr = [];
+  let playLen = playersArr.length;
+  let scorLen = scoresArr.length;
+  if (playLen==scorLen && scorLen!=0 && playLen!=0){
+    for (let i=0; i<playLen; ++i){
+      playScoreArr.push(`P:${i+1} ${playersArr[i]} scored ${scoresArr[i]}`)
+    } 
+  } else {
+    playScoreArr = "invalid inputs"
+  }
+  return playScoreArr;
 };
 
 /**
@@ -168,5 +214,20 @@ export const generateHighscores = (playersArr, scoresArr) => {
 // };
 
 export const encryptString = (toEncrypt) => {
-  return;
+  let list1 = []
+  let list2 = []
+  let list3 = []
+  const len1 = toEncrypt.length
+
+  if (len1>=3){
+    for (let i=0; i<len1; i+=3){
+      list1.push(toEncrypt[i])
+    }
+    for (let i=1; i<len1; i+=3){
+      list2.push(toEncrypt[i])
+    }
+    for (let i=2; i<len1; i+=3){
+      list3.push(toEncrypt[i])
+    } return `${list1.join("")}${list2.join("")}${list3.join("")}`
+  } else return toEncrypt;
 };

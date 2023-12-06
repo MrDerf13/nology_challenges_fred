@@ -33,7 +33,7 @@ export const findSmallestNumber = (/* Write the parameters here */number1, numbe
   /* Write your code here */
   if (number1 > number2) {
     return number2
-  } else if (number2 > number1) {
+  } else {
     return number1
   };
 }
